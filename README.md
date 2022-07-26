@@ -57,7 +57,7 @@ That's all you need to do for having a ready-to-develop Django project with some
 
 ## :octocat: Contributing
 
-Contributions, issues and feature requests are welcome! See [CONTRIBUTING](https://github.com/farhaduneci/DjangoTailwindTemplate/blob/master/CONTRIBUTING).
+Contributions, issues and feature requests are welcome! See [CONTRIBUTING](https://github.com/farhaduneci/DjangoTailwindTemplate/blob/master/CONTRIBUTING.md).
 
 ## :star2: Support
 
