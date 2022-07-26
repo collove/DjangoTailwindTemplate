@@ -2,7 +2,10 @@
     <img src="https://raw.githubusercontent.com/Farhaduneci/DjangoTailwindTemplate/main/.github_components/Icon.png" width="140">
     <h3 align="center">Django :heavy_plus_sign: TailWindCSS</h3>
 </p>
-
+<br>
+<p align="center">
+  <img src="https://repobeats.axiom.co/api/embed/395952b048f3ea06d8d2f7501940b3a1a283943c.svg">
+</p>
 <br>
 
 Django Starter Project, Including [TailWindCSS](https://tailwindcss.com/) and all other useful modules used in my projects.
