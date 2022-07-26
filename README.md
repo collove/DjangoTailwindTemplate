@@ -37,7 +37,7 @@ python3 manage.py startapp myapp
 
 You can extend your templates from `base.html`
 
-#### 3. Run your local server
+### 3. Run your local server
 
 Start TailWindCSS by running the following command in your terminal:
 
