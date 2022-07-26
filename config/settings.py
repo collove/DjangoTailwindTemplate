@@ -39,8 +39,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # 3rd-party
     "tailwind",
+    "compressor",
     # local
-    "tailwindcss.apps.TailwindcssConfig",
+    "tailwindcss",
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,11 @@ TAILWIND_APP_NAME = "tailwindcss"
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
+# Compressor Settings
+
+COMPRESS_ROOT = BASE_DIR / "tailwindcss/static_src/src"
+
+COMPRESS_ENABLED = True
+
+STATICFILES_FINDERS = ("compressor.finders.CompressorFinder",)

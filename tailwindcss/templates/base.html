@@ -1,19 +1,32 @@
+{% load compress %}
 {% load static tailwind_tags %}
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-    <title>Django Tailwind</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		{% tailwind_css %}
-	</head>
-
-	<body class="bg-gray-50 font-serif leading-normal tracking-normal">
-		<div class="container mx-auto">
-			<section class="flex items-center justify-center h-screen">
-				<h1 class="text-5xl">Django + Tailwind = ❤️</h1>
-			</section>
-		</div>
-	</body>
+<html lang="en" class="h-full">
+    <head>
+        <title>
+            {% block title %}
+                Django Tailwind
+            {% endblock title %}
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        {% compress css styles %}
+            {% tailwind_css %}
+        {% endcompress %}
+        {% block css %}
+        {% endblock css %}
+    </head>
+    <body class="h-full bg-gray-50 grid grid-rows-[1fr_auto_1fr] font-serif leading-normal tracking-normal">
+        {% include "navbar.html" %}
+        <main class="container mx-auto">
+            {% block content %}
+            {% endblock content %}
+        </main>
+        {% include "footer.html" %}
+        {% compress js file %}
+            {% block js %}
+            {% endblock js %}
+        {% endcompress %}
+    </body>
 </html>
