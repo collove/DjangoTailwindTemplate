@@ -56,7 +56,7 @@ python3 manage.py runserver
 
 That's all you need to do for having a ready-to-develop Django project with some :battery: included.
 
-## :octocat: Contributing
+## :tickets: Contributing
 
 Contributions, issues and feature requests are welcome! See [CONTRIBUTING](https://github.com/farhaduneci/DjangoTailwindTemplate/blob/main/CONTRIBUTING.md).
 
@@ -68,5 +68,5 @@ Give the repository a :star: if you found it helpful please.
 
 This project is being licensed under the [MIT License](https://github.com/farhaduneci/DjangoTailwindTemplate/blob/main/LICENSE).
 
-## :paperclip: Refrences
+## :paperclip: Links
 - I recommend you to have a :eyes: at [DjangoX](https://github.com/wsvincent/djangox), one of the best starter project repos for Django. This repository uses Bootstrap and inspired me to create what you are looking at now.
