@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Farhaduneci/DjangoTailwindTemplate/main/.github_components/Icon.png" width="140">
+    <img src="https://raw.githubusercontent.com/Farhaduneci/DjangoTailwindTemplate/main/.images/Icon.png" width="140">
     <h3 align="center">Django :heavy_plus_sign: TailWindCSS</h3>
 </p>
 <br>
