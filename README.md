@@ -1,7 +1,6 @@
 <p align="center">
     <img src="https://raw.githubusercontent.com/Farhaduneci/DjangoTailwindTemplate/main/.images/Icon.png">
 </p>
-<br>
 <p align="center">
   <img src="https://repobeats.axiom.co/api/embed/395952b048f3ea06d8d2f7501940b3a1a283943c.svg">
 </p>
