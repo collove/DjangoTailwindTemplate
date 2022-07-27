@@ -1,6 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Farhaduneci/DjangoTailwindTemplate/main/.images/Icon.png" width="140">
-    <h3 align="center">Django :heavy_plus_sign: TailWindCSS</h3>
+    <img src="https://raw.githubusercontent.com/Farhaduneci/DjangoTailwindTemplate/main/.images/Icon.png">
 </p>
 <br>
 <p align="center">
@@ -71,6 +70,4 @@ Give the repository a :star: if you found it helpful please.
 This project is being licensed under the [MIT License](https://github.com/farhaduneci/DjangoTailwindTemplate/blob/main/LICENSE).
 
 ## :paperclip: Refrences
-
-- The project logo is an :art: from [Ahebwe Oscar](https://morioh.com/@607d9be4925efb1381779f48)
 - I recommend you to have a :eyes: at [DjangoX](https://github.com/wsvincent/djangox), one of the best starter project repos for Django. This repository uses Bootstrap and inspired me to create what you are looking at now.
