@@ -81,7 +81,7 @@ Then you simply need to run Django's local server:
 python3 manage.py runserver
 ```
 
-### 6. Start Exploring :rocket
+### 6. Start Exploring :rocket:
 
 That's all you need to do for having a ready-to-develop Django project with some :battery: included.
 
