@@ -1,3 +1,4 @@
+{% load static %}
 {% load compress %}
 {% load static tailwind_tags %}
 <!DOCTYPE html>
@@ -11,13 +12,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        {% compress css styles %}
+        {% compress css file styles %}
             {% tailwind_css %}
         {% endcompress %}
         {% block css %}
         {% endblock css %}
     </head>
-    <body class="h-full bg-gray-50 grid grid-rows-[1fr_auto_1fr] font-serif leading-normal tracking-normal">
+    <body class="h-full bg-gray-50 grid grid-rows-[auto_1fr_auto] leading-normal tracking-normal">
         {% include "navbar.html" %}
         <main class="container mx-auto">
             {% block content %}

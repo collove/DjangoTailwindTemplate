@@ -134,7 +134,7 @@ INTERNAL_IPS = [
 
 # Compressor Settings
 
-COMPRESS_ROOT = BASE_DIR / "tailwindcss/static_src/src"
+COMPRESS_ROOT = BASE_DIR / "tailwindcss/static"
 
 COMPRESS_ENABLED = True
 

@@ -24,6 +24,10 @@ Clone the repository and follow the steps bellow:
 python3 -m pip install -r requirments.txt
 ```
 
+```shell
+python3 manage.py tailwind install
+```
+
 ### 2. Create an application
 
 Create a new Django app in your project
