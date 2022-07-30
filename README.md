@@ -15,9 +15,14 @@ Django Starter Project, Including [TailWindCSS](https://tailwindcss.com/) and al
 
 - Django 4.0 & Python 3.10
 - Styling with [TailWindCSS](https://tailwindcss.com/)
-- Static File Combine with [Django Compressor](https://django-compressor.readthedocs.io/en/)
+- Complete user authentication (Log-in/Log-out, ...) via [Django Allauth](https://github.com/pennersr/django-allauth)
+- Static file combine with [Django Compressor](https://django-compressor.readthedocs.io/en/)
 - Strict separation of settings from code by using [Python Decouple](https://pypi.org/project/python-decouple/)
-- TailWind-styled Crispy Forms via [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+- TailWind-styled crispy forms via [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+
+## Demo
+
+![Demo](https://raw.githubusercontent.com/Farhaduneci/DjangoTailwindTemplate/main/.images/Demo.png)
 
 ## :scroll: How to Run
 
@@ -69,7 +74,7 @@ python3 manage.py startapp myapp
 
 #### Create your URL, Template and views
 
-You can extend your templates from `base.html`
+You can extend your templates from `base/_base.html`
 
 ### 5. Migrate :butterfly:
 

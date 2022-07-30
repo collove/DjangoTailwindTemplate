@@ -1,14 +1,11 @@
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib import admin
 
-from .forms import UserChangeForm, UserCreationForm
 from .models import User
 
 
 class UserAdmin(BaseUserAdmin):
     model = User
-    form = UserChangeForm
-    add_form = UserCreationForm
 
     list_display = ("username", "email", "is_admin")
     list_filter = ("is_admin",)
