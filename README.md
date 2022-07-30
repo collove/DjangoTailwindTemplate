@@ -7,7 +7,7 @@
 <br>
 
 > This project is still in its early stages of development. Any
-> contributions to the package would be very welcomed. :white_heart:
+> contributions to the repo is very welcomed. :white_heart:
 
 Django Starter Project, Including [TailWindCSS](https://tailwindcss.com/) and all other useful modules used in my projects.
 
