@@ -27,7 +27,8 @@ INSTALLED_APPS = [
     "crispy_forms",
     "crispy_tailwind",
     # local
-    "account.apps.AccountConfig",
+    "pages.apps.PagesConfig",
+    "accounts.apps.AccountsConfig",
     "tailwindcss.apps.TailwindcssConfig",
 ]
 

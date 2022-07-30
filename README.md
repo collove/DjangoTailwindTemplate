@@ -71,7 +71,20 @@ python3 manage.py startapp myapp
 
 You can extend your templates from `base.html`
 
-### 5. Run your local server
+### 5. Migrate :butterfly:
+
+You need to create migration files (if you have any changes in your
+models) and run `migrate` command to apply them.
+
+```shell
+python3 manage.py makemigrations
+```
+
+```shell
+python3 manage.py migrate
+```
+
+### 6. Run your local server
 
 Start TailWindCSS by running the following command in your terminal:
 
@@ -85,7 +98,7 @@ Then you simply need to run Django's local server:
 python3 manage.py runserver
 ```
 
-### 6. Start Exploring :rocket:
+### 7. Start Exploring :rocket:
 
 That's all you need to do for having a ready-to-develop Django project with some :battery: included.
 
@@ -107,6 +120,13 @@ You can also use the `{% crispy %}` tag to allow usage of crispy-forms'
 > Visit [Crispy Forms Documentation](https://django-crispy-forms.readthedocs.io/en/latest/index.html)
 > and [crispy-tailwind](https://github.com/django-crispy-forms/crispy-tailwind)
 > repository for more information.
+
+## Next Steps
+
+- Add [gunicorn](https://pypi.org/project/gunicorn/) as the production web server.
+- Update the [EMAIL_BACKEND](https://docs.djangoproject.com/en/4.0/topics/email/#module-django.core.mail) and connect with a mail provider.
+- Make the [admin more secure](https://opensource.com/article/18/1/10-tips-making-django-admin-more-secure).
+- `django-allauth` supports [social authentication](https://django-allauth.readthedocs.io/en/latest/providers.html) if you need that.
 
 ## :tickets: Contributing
 

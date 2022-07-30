@@ -1,14 +1,34 @@
 {% extends 'base.html' %}
 {% block content %}
-    <div class="p-6 py-12 dark:bg-blue-400 dark:text-gray-900">
-        <div class="container mx-auto">
-            <div class="flex flex-col lg:flex-row items-center justify-between">
-                <h1 class="text-center text-7xl tracking-tighter font-bold">
-                    You Are @
-                    <br class="sm:hidden">
-                    Sweet Home 🏠
-                </h1>
-            </div>
+    <div class="p-6 py-12">
+        <div class="flex flex-col gap-4">
+            <span class="text-7xl inline">🏠</span>
+            <h1 class="text-7xl tracking-tighter font-bold">
+                You Are in
+                <br class="sm:hidden">
+                <span class="font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                    Sweet Home
+                </span>.
+            </h1>
+        </div>
+    </div>
+    <div class="flex flex-row pl-4 py-2 gap-2 items-center border rounded-lg shadow overflow-hidden dark:bg-gray-900 dark:border-blue-400">
+        <span class="flex-shrink-0 inline-flex mx-3 item-center justify-center leading-none rounded-full dark:bg-blue-400 dark:text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 20 20"
+                 fill="currentColor"
+                 class="h-8 w-8">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd">
+                </path>
+            </svg>
+        </span>
+        <div class="flex-1 p-2">
+            <p class="text-sm dark:text-gray-100">
+                You can edit this page @
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-1.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">
+                    pages/home.html
+                </span>
+            </p>
         </div>
     </div>
 {% endblock content %}
