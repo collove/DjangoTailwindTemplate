@@ -27,7 +27,8 @@ INSTALLED_APPS = [
     "crispy_forms",
     "crispy_tailwind",
     # local
-    "tailwindcss",
+    "account.apps.AccountConfig",
+    "tailwindcss.apps.TailwindcssConfig",
 ]
 
 MIDDLEWARE = [
@@ -84,6 +85,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Authentication User Model
+AUTH_USER_MODEL = "accounts.User"
+
 # Internationalization
 LANGUAGE_CODE = "en-us"
 
@@ -103,6 +107,10 @@ STATICFILES_FINDERS = ("compressor.finders.CompressorFinder",)
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = "media/"
+
+# Login/Logout Redirect URLs
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"
 
 # TailWindCSS Settings
 TAILWIND_APP_NAME = "tailwindcss"

@@ -16,8 +16,8 @@ Django Starter Project, Including [TailWindCSS](https://tailwindcss.com/) and al
 - Django 4.0 & Python 3.10
 - Styling with [TailWindCSS](https://tailwindcss.com/)
 - Static File Combine with [Django Compressor](https://django-compressor.readthedocs.io/en/)
-- Strict separation of settings from code by using [python-decouple](https://pypi.org/project/python-decouple/)
-- TailWind-styled Crispy Forms via [Django-Crispy-Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+- Strict separation of settings from code by using [Python Decouple](https://pypi.org/project/python-decouple/)
+- TailWind-styled Crispy Forms via [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
 
 ## :scroll: How to Run
 
