@@ -12,7 +12,7 @@
             </h1>
         </div>
     </div>
-    <div class="flex flex-row pl-4 py-2 gap-2 items-center border rounded-lg shadow overflow-hidden dark:bg-gray-900 dark:border-blue-400">
+    <div class="flex flex-row pl-4 py-2 gap-2 items-center border rounded-lg shadow overflow-hidden dark:bg-gray-900 dark:border-blue-400 max-w-3xl">
         <span class="flex-shrink-0 inline-flex mx-3 item-center justify-center leading-none rounded-full dark:bg-blue-400 dark:text-gray-900">
             <svg xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 20 20"
@@ -31,59 +31,63 @@
             </p>
         </div>
     </div>
-    <section class="dark:bg-gray-900">
-        <div class="container px-6 py-10 mx-auto">
-            <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
-                explore the repo
-                <br>
-                awesome <span class="text-blue-500">Features</span>
-            </h1>
-            <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
-                <div class="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl dark:bg-gray-800">
-                    <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                             class="w-6 h-6"
-                             fill="none"
-                             viewBox="0 0 24 24"
-                             stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                        </svg>
-                    </span>
-                    <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Zero Configrations</h1>
-                    <p class="text-gray-500 dark:text-gray-300">
-                        Any required configuration is done in the <b>settings.py</b> file. You can edit this file to change the default settings. read modules documentation to understand how to configure the app.
-                    </p>
+    <hr class="my-6">
+    <section class="px-4  mx-auto max-w-7xl">
+        <h2 class="mb-1 text-3xl font-extrabold leading-tight text-gray-900">Features</h2>
+        <p class="mb-8 text-lg text-gray-500">Get insights to dig down into what's powering your growth the most.</p>
+        <div class="mb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-16 lg:gap-x-24 gap-y-20">
+            <div>
+                <div class="flex items-center justify-center w-8 h-8 mb-4 text-purple-600 bg-purple-100 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 20 20"
+                         fill="currentColor"
+                         class="w-5 h-5"
+                         aria-hidden="true">
+                        <path
+                        fill-rule="evenodd"
+                        d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                        clip-rule="evenodd"
+                        />
+                    </svg>
                 </div>
-                <div class="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl dark:bg-gray-800">
-                    <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                             class="w-6 h-6"
-                             fill="none"
-                             viewBox="0 0 24 24"
-                             stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                        </svg>
-                    </span>
-                    <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">User Authentication</h1>
-                    <p class="text-gray-500 dark:text-gray-300">
-                        Using <b>django-allauth</b> this template offers a fully integrated authentication app that allows for both local and social authentication, with flows that just work.
-                    </p>
+                <h3 class="mb-2 text-base font-semibold leading-tight text-gray-900">User Authenttication</h3>
+                <p class="text-sm text-gray-500">
+                    Using <b>django-allauth</b> this template offers a fully integrated authentication app that allows for both local and social authentication.
+                </p>
+            </div>
+            <div>
+                <div class="flex items-center justify-center w-8 h-8 mb-4 text-red-600 bg-red-100 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 20 20"
+                         fill="currentColor"
+                         class="w-5 h-5"
+                         aria-hidden="true">
+                        <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                    </svg>
                 </div>
-                <div class="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl dark:bg-gray-800">
-                    <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                             class="w-6 h-6"
-                             fill="none"
-                             viewBox="0 0 24 24"
-                             stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                        </svg>
-                    </span>
-                    <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Ready to fly</h1>
-                    <p class="text-gray-500 dark:text-gray-300">
-                        I have included everything you need to get started as fast and easy as possible, so you can start coding the true application logic right away, all other stuff will be handled by the template.
-                    </p>
+                <h3 class="mb-2 text-base font-semibold leading-tight text-gray-900">Ready To Use</h3>
+                <p class="text-sm text-gray-500">I have included everything you need to get started as fast and easy as possible.</p>
+            </div>
+            <div>
+                <div class="flex items-center justify-center w-8 h-8 mb-4 text-pink-600 bg-pink-100 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 20 20"
+                         fill="currentColor"
+                         class="w-5 h-5"
+                         aria-hidden="true">
+                        <path
+                        fill-rule="evenodd"
+                        d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z"
+                        clip-rule="evenodd"
+                        />
+                    </svg>
                 </div>
+                <h3 class="mb-2 text-base font-semibold leading-tight text-gray-900">Zero Configuration</h3>
+                <p class="text-sm text-gray-500">
+                    Any required configuration is done in the settings.py file. You can edit this file to change the default settings.
+                </p>
             </div>
         </div>
     </section>

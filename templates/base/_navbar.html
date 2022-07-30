@@ -1,14 +1,41 @@
-<navbar class="flex flex-col items-center justify-between px-6 py-4 bg-gray-200 sm:flex-row">
-<p class="text-gray-700">
-    <b>
-        Navbar content
-    </b>
-</p>
-<p class="text-sm text-gray-500">
-    Complete the
-    <span class="bg-gray-100 text-xs font-semibold mr-2 px-1.5 py-0.5 rounded">_navbar.html</span>
-    file @
-    <span class="bg-gray-100 text-xs font-semibold mr-2 px-1.5 py-0.5 rounded">templates/base/_navbar.html</span>
-    to add your own navbar content.
-</p>
-</navbar>
+<div>
+    <navbar class="flex flex-col items-center justify-between px-6 py-2 bg-gray-200 sm:flex-row">
+    <p class="text-gray-700">
+        <b>
+            Navbar content
+        </b>
+    </p>
+    <div class="duration-150 ease-in-out my-1">
+        {% if user.is_authenticated %}
+            Hello <b>{{ user.username | title }}</b>
+        {% else %}
+            <a type="button"
+               href="{% url 'account_login' %}"
+               class="px-4 py-1.5 font-semibold rounded bg-white dark:bg-gray-100 dark:text-gray-800 hover:text-white hover:bg-gray-700 hover:transition-colors ">
+                Login
+            </a>
+            <a type="button"
+               href="{% url 'account_login' %}"
+               class="ml-2 px-3 py-1 font-semibold rounded border-2 border-gray-500 dark:text-gray-100 dark:border-gray-300 hover:bg-gray-700 hover:text-white hover:transition-colors">
+                Sign up
+            </a>
+        {% endif %}
+    </div>
+    </navbar>
+    <div class="px-6 py-2 bg-gray-100 flex flex-row justify-between items-center">
+        <p class="text-sm text-gray-500">
+            Complete the
+            <span class="bg-gray-100 text-xs font-semibold mr-2 px-1.5 py-0.5 rounded">_navbar.html</span>
+            file @
+            <span class="bg-gray-100 text-xs font-semibold mr-2 px-1.5 py-0.5 rounded">templates/base/_navbar.html</span>
+            to add your own navbar content.
+        </p>
+        {% if user.is_authenticated %}
+            <a type="button"
+               href="{% url 'account_logout' %}"
+               class="font-semibold underline text-gray-600 dark:text-gray-200">
+                Log out
+            </a>
+        {% endif %}
+    </div>
+</div>
