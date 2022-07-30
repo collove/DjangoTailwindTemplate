@@ -6,20 +6,39 @@ from .models import User
 
 class UserAdmin(BaseUserAdmin):
     model = User
-
-    list_display = ("username", "email", "is_admin")
-    list_filter = ("is_admin",)
+    list_display = ("email", "first_name", "last_name", "is_staff")
     fieldsets = (
-        (None, {"fields": ("username", "password")}),
-        ("Personal info", {"fields": ("email",)}),
-        ("Permissions", {"fields": ("is_admin",)}),
+        (None, {"fields": ("email", "password")}),
+        ("Personal info", {"fields": ("first_name", "last_name")}),
+        (
+            "Permissions",
+            {
+                "fields": (
+                    "is_active",
+                    "is_staff",
+                    "is_superuser",
+                    "groups",
+                    "user_permissions",
+                )
+            },
+        ),
+        ("Important dates", {"fields": ("last_login", "date_joined")}),
     )
-
     add_fieldsets = (
         (
             None,
-            {"classes": ("wide",), "fields": ("username", "password1", "password2")},
+            {
+                "classes": ("wide",),
+                "fields": ("email", "password1", "password2"),
+            },
         ),
     )
-    search_fields = ("username",)
-    ordering = ("username",)
+    search_fields = ("email", "first_name", "last_name")
+    ordering = ("email",)
+    filter_horizontal = (
+        "groups",
+        "user_permissions",
+    )
+
+
+admin.site.register(User, UserAdmin)

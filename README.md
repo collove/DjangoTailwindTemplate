@@ -20,7 +20,7 @@ Django Starter Project, Including [TailWindCSS](https://tailwindcss.com/) and al
 - Strict separation of settings from code by using [Python Decouple](https://pypi.org/project/python-decouple/)
 - TailWind-styled crispy forms via [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
 
-## Demo
+## :film_projector: Demo
 
 ![Demo](https://raw.githubusercontent.com/Farhaduneci/DjangoTailwindTemplate/main/.images/Demo.png)
 
@@ -107,7 +107,7 @@ python3 manage.py runserver
 
 That's all you need to do for having a ready-to-develop Django project with some :battery: included.
 
-## How to use Crispy Forms
+## :question: How to use Crispy Forms
 
 Current version (crispy-tailwind/0.5) allows the `|crispy` filter to be used to style your
 form. In your template:
@@ -126,7 +126,7 @@ You can also use the `{% crispy %}` tag to allow usage of crispy-forms'
 > and [crispy-tailwind](https://github.com/django-crispy-forms/crispy-tailwind)
 > repository for more information.
 
-## Next Steps
+## :rainbow: Next Steps
 
 - Add [gunicorn](https://pypi.org/project/gunicorn/) as the production web server.
 - Update the [EMAIL_BACKEND](https://docs.djangoproject.com/en/4.0/topics/email/#module-django.core.mail) and connect with a mail provider.
