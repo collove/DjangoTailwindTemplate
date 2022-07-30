@@ -6,6 +6,9 @@
 </p>
 <br>
 
+> This project is still in its early stages of development. Any
+> contributions to the package would be very welcomed. :white_heart:
+
 Django Starter Project, Including [TailWindCSS](https://tailwindcss.com/) and all other useful modules used in my projects.
 
 ## :toolbox: Features
@@ -14,6 +17,7 @@ Django Starter Project, Including [TailWindCSS](https://tailwindcss.com/) and al
 - Styling with [TailWindCSS](https://tailwindcss.com/)
 - Static File Combine with [Django Compressor](https://django-compressor.readthedocs.io/en/)
 - Strict separation of settings from code by using [python-decouple](https://pypi.org/project/python-decouple/)
+- TailWind-styled Crispy Forms via [Django-Crispy-Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
 
 ## :scroll: How to Run
 
@@ -84,6 +88,25 @@ python3 manage.py runserver
 ### 6. Start Exploring :rocket:
 
 That's all you need to do for having a ready-to-develop Django project with some :battery: included.
+
+## How to use Crispy Forms
+
+Current version (crispy-tailwind/0.5) allows the `|crispy` filter to be used to style your
+form. In your template:
+
+1. Load the filter: `{% load tailwind_filters %}`
+2. Apply the crispy filter: `{{ form|crispy }}`
+
+You can also use the `{% crispy %}` tag to allow usage of crispy-forms'
+`FormHelper` and `Layout`. In your template:
+
+1. Load the crispy tag: `{% load crispy_forms_tags %}`
+2. Add `FormHelper` to your form and use crispy-forms to set-up your form
+3. Use the crispy tag `{% crispy form %}` in your template
+
+> Visit [Crispy Forms Documentation](https://django-crispy-forms.readthedocs.io/en/latest/index.html)
+> and [crispy-tailwind](https://github.com/django-crispy-forms/crispy-tailwind)
+> repository for more information.
 
 ## :tickets: Contributing
 
