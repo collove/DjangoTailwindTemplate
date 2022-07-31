@@ -15,7 +15,7 @@
                 Login
             </a>
             <a type="button"
-               href="{% url 'account_login' %}"
+               href="{% url 'account_signup' %}"
                class="ml-2 px-3 py-1 font-semibold rounded border-2 border-gray-500 dark:text-gray-100 dark:border-gray-300 hover:bg-gray-700 hover:text-white hover:transition-colors">
                 Sign up
             </a>
@@ -25,9 +25,9 @@
     <div class="px-6 py-2 bg-gray-100 flex flex-row justify-between items-center">
         <p class="text-sm text-gray-500">
             Complete the
-            <span class="bg-gray-100 text-xs font-semibold mr-2 px-1.5 py-0.5 rounded">_navbar.html</span>
+            <span class="bg-gray-200 text-xs font-semibold mr-2 px-1.5 py-0.5 rounded">_navbar.html</span>
             file @
-            <span class="bg-gray-100 text-xs font-semibold mr-2 px-1.5 py-0.5 rounded">templates/base/_navbar.html</span>
+            <span class="bg-gray-200 text-xs font-semibold mr-2 px-1.5 py-0.5 rounded">templates/base/_navbar.html</span>
             to add your own navbar content.
         </p>
         {% if user.is_authenticated %}

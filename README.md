@@ -44,7 +44,7 @@ python3 -m pip install -r requirements.txt
 python3 manage.py tailwind install
 ```
 
-#### 3. Create both `./config/local_settings.py` and `.env` files and write the following contents in them
+### 3. Create both `./config/local_settings.py` and `.env` files and write the following contents in them
 
 ```shell
 touch ./config/local_settings.py && touch .env

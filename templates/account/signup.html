@@ -1,0 +1,28 @@
+{% extends 'base/_base.html' %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+{% block title %}
+    Signup Page
+{% endblock title %}
+{% block content %}
+    <h1 class="text-4xl font-bold mb-4">{% trans "Sign Up" %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit">Ok</button>
+    </form>
+    <div class="mt-6 flex flex-row pl-4 py-2 gap-2 items-center border rounded-lg shadow overflow-hidden dark:bg-gray-900 dark:border-blue-400">
+        <span class="flex-shrink-0 inline-flex mx-3 item-center justify-center leading-none rounded-full dark:bg-blue-400 dark:text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 20 20"
+                 fill="currentColor"
+                 class="h-8 w-8">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd">
+                </path>
+            </svg>
+        </span>
+        <div class="flex-1 p-2">
+            <p class="text-sm dark:text-gray-100">You can edit this page @ /templates/account/signup.html</p>
+        </div>
+    </div>
+{% endblock content %}
